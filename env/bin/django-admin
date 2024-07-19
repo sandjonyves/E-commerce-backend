@@ -1,4 +1,4 @@
-#!/home/lavue/Web/Python/Django/Powerk-soft/e-commerce-backend/env/bin/python3
+#!/home/shotter/DEV/WEB/python/Django/powerksoft/test2/E-commerce-backend/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

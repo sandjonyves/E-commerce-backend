@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/lavue/Web/Python/Django/Powerk-soft/e-commerce-backend/env"
+set -gx VIRTUAL_ENV "/home/shotter/DEV/WEB/python/Django/powerksoft/test2/E-commerce-backend/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
