@@ -1,4 +1,5 @@
 .env
+env
 *.sqlite3
 code.txt
 __pycache__/
