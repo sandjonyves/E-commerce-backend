@@ -105,7 +105,7 @@ class PieceSerializer(serializers.ModelSerializer):
         piece_images = validated_data.pop('images')
         # print('piecesssssssssss',piece_images)
         piece = Piece.objects.create(**validated_data)
-
+        piece_image = list(set(piece_image))
         for piece_image in piece_images:
             image = json.loads(piece_image)
             print(image)
