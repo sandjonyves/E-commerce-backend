@@ -22,8 +22,16 @@ class PierceViewSet(viewsets.ModelViewSet):
     permission_classes = [AllowAny]
     queryset = Piece.objects.all()
     serializer_class = PieceSerializer
+
+    def destroy_all(self, request):
+        queryset = self.get_queryset()
+        queryset.delete()
+        return Response(status=204)
+
+    
     # parser_classes = [MultiPartParser]
 
+    
     # @permission_classes([AllowAny])
     # def create(self, request, *args, **kwargs):
     #     return super().create(request, *args, **kwargs)
@@ -165,3 +173,5 @@ class Read(viewsets.ViewSet):
         serializer = PieceSerializer(query,many=True)
 
         return Response(serializer.data)
+
+    
